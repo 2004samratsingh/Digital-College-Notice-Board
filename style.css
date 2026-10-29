@@ -1,0 +1,122 @@
+/* Universal selector to reset default margins, paddings, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page body styling with a clean light background and default text color */
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    padding: 20px;
+}
+
+/* Main container card wrapping the entire notice board interface */
+.board-container {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Header layout and text alignment */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #1e3a8a;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Section spacing for form and notice feeds */
+.form-section, .notices-section {
+    margin-bottom: 25px;
+}
+
+/* Section headings with a bottom border separator */
+h2 {
+    font-size: 18px;
+    color: #1e293b;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 5px;
+}
+
+/* Flexbox setup for form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Styling for input text boxes and textareas */
+input, textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+/* Input focus highlight effect */
+input:focus, textarea:focus {
+    border-color: #3b82f6;
+}
+
+/* Publish button design and interaction styles */
+button {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Styling for dynamically generated individual notice cards */
+.notice-card {
+    background: #f8fafc;
+    border-left: 4px solid #3b82f6;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.notice-card h3 {
+    color: #0f172a;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.notice-card p {
+    color: #475569;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.notice-card span {
+    font-size: 11px;
+    color: #94a3b8;
+}
